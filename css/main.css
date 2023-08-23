@@ -3,11 +3,6 @@
 /* ----------------------------------------------------------------------------------------------- */
 /* Global Styles */
 
-/* Body */
-body{
-    background-color: #0182be;
-}
-
 /* Fonts */
 h1, h2, h3, h4, h5, h6{
     font-family: 'Josefin Sans', sans-serif;
@@ -75,11 +70,12 @@ p{
 
 /* Card */
 .card{
-    border-radius: 150px 150px 12px 12px;
-    background: #f3f3f3;
+    border-radius: 12px;
+    background: #0182be;
     text-align: center;
     height: 440px;
     border: none;
+    padding-top: 10px;
 }
 
 .card-img-top{
@@ -93,6 +89,22 @@ p{
     height: 200px;
 }
 
-.card-text{
-    color: #18382B;
+.card-text, .card-title{
+    color: #ddc5aa;
+}
+
+.card-button{
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    background: #219084;
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    color: #ddc5aa;
+}
+
+.card-button:hover{
+    background: #ddc5aa;
+    color: #219084;
 }
