@@ -37,6 +37,37 @@
     </nav>
 
     <div class="container mt-5 pt-5">
+      
+      <br><br>
+
+      <!-- Filters and Sorts -->
+      <div class="row">
+
+        <!-- Filter Radio Buttons -->
+        <div class="btn-group col-auto" role="group">
+          <input type="radio" class="btn-check" name="btnradio" id="allDestinationsFilter" autocomplete="off" checked>
+          <label class="btn btn-outline-primary" for="allDestinationsFilter">All Destinations</label>
+        
+          <input type="radio" class="btn-check" name="btnradio" id="shortFilter" autocomplete="off">
+          <label class="btn btn-outline-primary" for="shortFilter"><i class="bi-alarm"></i> Short Duration Trips</label>
+        
+          <input type="radio" class="btn-check" name="btnradio" id="longFilter" autocomplete="off">
+          <label class="btn btn-outline-primary" for="longFilter"><i class="bi bi-alarm-fill"></i> Long Duration Trips</label>
+
+          <input type="radio" class="btn-check" name="btnradio" id="singleFilter" autocomplete="off">
+          <label class="btn btn-outline-primary" for="singleFilter"><i class="bi bi-geo-alt-fill"></i> Single Destination</label>
+
+          <input type="radio" class="btn-check" name="btnradio" id="multiFilter" autocomplete="off">
+          <label class="btn btn-outline-primary" for="multiFilter"><i class="bi bi-geo-alt"></i> Multi Destinations</label>
+
+          <input type="radio" class="btn-check" name="btnradio" id="roundFilter" autocomplete="off">
+          <label class="btn btn-outline-primary" for="roundFilter"><i class="bi bi-geo-fill"></i> Round Trips</label>
+
+          <input type="radio" class="btn-check" name="btnradio" id="rowFilter" autocomplete="off">
+          <label class="btn btn-outline-primary" for="rowFilter"><i class="bi bi-coin"></i> Row Boat Special</label>
+        </div>
+      </div>
+
         <!-- List of trip cards -->
         <div class="row py-5" id="tripsContainer">
     
@@ -50,6 +81,7 @@
                   <h5 class="card-title" id="name-text"></h5>
                   <p class="card-text" id="card-price"></p>
                   <p class="card-text" id="card-destination"></p>
+                  <p class="card-text" id="card-duration"></p>
                   <p class="card-text" id="purchase-head">Purchase Ticket</p>
                   <button class="card-button" id="card-button">+</button>
                 </div>

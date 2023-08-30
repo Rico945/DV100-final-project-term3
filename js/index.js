@@ -4,6 +4,7 @@ const arrTrips = [
         name: "Cruise",
         price: "1500",
         destination: "Here to There",
+        duration: "However many minutes",
         image: "trip_card1.png"
     }
 ];
@@ -42,11 +43,13 @@ function loadTrips() {
         $(currentChild).find("#name-text").text(trip.name);
         $(currentChild).find("#card-price").text(trip.price);
         $(currentChild).find("#card-destination").text(trip.destination);
+        $(currentChild).find("#card-duration").text(trip.duration);
         $(currentChild).find(".card-img-top").attr('src', '../assets/' + trip.image);
 
         //Hide the description text from the current card
         $(currentChild).find("#card-price").hide();
         $(currentChild).find("#card-destination").hide();
+        $(currentChild).find("#card-duration").hide();
         $(currentChild).find("#purchase-head").hide();
         $(currentChild).find("#card-button").hide();
     };
@@ -59,6 +62,7 @@ $("#tripsContainer").on('click', '.card', function () {
     //Toggle information
     $(this).find("#card-price").toggle();
     $(this).find("#card-destination").toggle();
+    $(this).find("#card-duration").toggle();
     $(this).find("#purchase-head").toggle();
     $(this).find("#card-button").toggle();
 
