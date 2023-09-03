@@ -13,6 +13,12 @@ p{
     font-family: 'Nunito', sans-serif;
 }
 
+.cart-head{
+    color: #0182be;
+    text-align: center;
+    margin-top: 50px;
+}
+
 /* ----------------------------------------------------------------------------------------------- */
 /* Buttons */
 .hero-button{
@@ -77,6 +83,7 @@ p{
     height: 440px;
     border: none;
     padding-top: 10px;
+    margin-bottom: 10px;
 }
 
 .card-img-top{
@@ -108,4 +115,16 @@ p{
 .card-button:hover{
     background: #ddc5aa;
     color: #219084;
+}
+
+.orderLine{
+    border-radius: 12px;
+    background-color: #0182be;
+    color: #dbb68b;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#cartContainer{
+    margin-top: 10px;
 }
